@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
     void mostrarMenu() {
@@ -13,9 +14,9 @@ public class Main {
 
     void validarOpcion(int opcion, Scanner sc) {
         switch (opcion) {
-            case 1 -> operacionSuma();
-            case 2 -> operacionResta();
-            case 3 -> operacionMultiplicacion();
+            case 1 -> crearMatriz();
+            case 2 -> llenarMatriz();
+            case 3 -> ();
             case 4 -> operacionInversa();
             case 5 -> operacionDivision();
             default -> System.out.println("Opción invalida");
@@ -40,7 +41,22 @@ public class Main {
             return false;
         }
     }
+
     int[][] llenarMatriz(int matriz[][]) {
 
+        Random rand = new Random();
+
+            for (int i = 0; i < matriz.length; i++) {
+                for (int j = 0; j < matriz[0].length; j++) {
+                    matriz[i][j] = rand.nextInt(10);
+
+                }
+            }
+        return matriz;
+    }
+
+    void mostrarFila(int matriz[][], int fila) {
+
+        for (int i = 0; i < matriz.length)
     }
 }
