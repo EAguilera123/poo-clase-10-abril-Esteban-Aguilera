@@ -33,8 +33,13 @@ public class Main {
     }
 
     int[][] crearMatriz(int filas, int columnas) {
-           int[][] matriz = new int [filas][columnas];
-    return matriz;
+        validarDimensiones(filas, columnas);
+        if (true) {
+            int[][] matriz = new int[filas][columnas];
+            return matriz;
+        } else {
+
+        }
     }
 
     static boolean validarDimensiones(int filas, int columnas) {
